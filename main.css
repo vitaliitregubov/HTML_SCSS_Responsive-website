@@ -93,7 +93,7 @@ img {
   justify-self: flex-end;
   top: 60px;
   height: 350px;
-  width: 400px;
+  width: 360px;
   padding: 40px;
   z-index: 100;
 }
@@ -162,8 +162,113 @@ img {
       grid-template-columns: repeat(3, 1fr);
 }
 
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+}
+
+.languages .flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.languages .card {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.languages .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.languages .card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.footer .social a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.footer .social a :hover {
+  color: #047aed;
+}
+
+.footer .social a i {
+  color: #fff;
+}
+
+.footer nav ul li a {
+  color: #fff;
+}
+
+.footer nav ul li a:hover {
+  color: #047aed;
+}
+
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid.grid-3,
+  .cli .grid,
+  .cloud .grid,
+  .footer .grid.grid-3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .showcase {
+    height: auto;
+  }
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .showcase-form {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .cli .grid > *:first-child {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+  .navbar .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
 .bg-primary {
   background-color: #047aed;
+}
+
+.bg-dark {
+  background-color: #222;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.md {
+  font-size: 30px;
 }
 
 .lg {
@@ -188,6 +293,10 @@ img {
 
 .m-2 {
   margin: 1.5rem;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
 }
 
 .m-3 {
@@ -220,6 +329,10 @@ img {
 
 .p-4 {
   padding: 3rem;
+}
+
+.py-4 {
+  padding: 3rem 0;
 }
 
 .p-5 {
